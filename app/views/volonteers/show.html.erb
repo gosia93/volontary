@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @volonteer.name %>
+</p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @volonteer.surname %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @volonteer.age %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @volonteer.city %>
+</p>
+
+<p>
+  <strong>Volontary:</strong>
+  <%= @volonteer.volontary %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @volonteer.description %>
+</p>
+
+<%= link_to 'Edit', edit_volonteer_path(@volonteer) %> |
+<%= link_to 'Back', volonteers_path %>
