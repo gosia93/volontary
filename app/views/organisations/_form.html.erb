@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :volontary %><br>
-    <%= f.text_field :volontary %>
+     <%= collection_select(:organisation, :volontary_type_id, VolontaryType.all, :id, :name, {prompt: true}) %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
